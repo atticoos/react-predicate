@@ -1,0 +1,29 @@
+{
+  "name": "react-predicate",
+  "version": "1.0.0",
+  "description": "@TODO",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajwhite/react-predicate.git"
+  },
+  "keywords": [
+    "react",
+    "if",
+    "else",
+    "condition",
+    "control-flow"
+  ],
+  "author": "Atticus White <contact@atticuswhite.com> (http://atticuswhite.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajwhite/react-predicate/issues"
+  },
+  "homepage": "https://github.com/ajwhite/react-predicate#readme"
+}

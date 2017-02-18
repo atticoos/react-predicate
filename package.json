@@ -2,7 +2,7 @@
   "name": "react-predicate",
   "version": "1.0.0",
   "description": "@TODO",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "example": "example"
   },

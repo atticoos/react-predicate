@@ -3,7 +3,7 @@ import {mount} from 'enzyme';
 import {Switch, Case, Default} from './switch';
 
 describe('Switch', () => {
-  test('matches with a corresponding Case', () => {
+  test('matches with a corresponding Case and breaks', () => {
     function SwitchTest ({value}) {
       return (
         <Switch on={value}>
@@ -82,5 +82,21 @@ describe('Switch', () => {
         <SwitchTest value={i} />
       ).text()).toEqual(expectedOutput);
     }
+  });
+
+  test('falls back to default when no cases are satisfied', () => {
+    function SwitchTest ({value}) {
+      return (
+        <Switch on={value}>
+          <Case when={1}><span>1</span></Case>
+          <Case when={2} break><span>2</span></Case>
+          <Default><span>3</span></Default>
+        </Switch>
+      );
+    }
+
+    expect(mount(
+      <SwitchTest value={3} />
+    ).text()).toEqual(`3`);
   });
 });
